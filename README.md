@@ -3,7 +3,10 @@
     <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
 </picture>
 
-# Leptos Axum Starter Template
+# Leptos Axum Starter Template - Hosted on Shuttle.rs
+
+## Note: This starter template has been modified in the following ways - see: 
+https://github.com/shuttle-hq/shuttle/issues/1002#issuecomment-1853661643
 
 This is a template for use with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [cargo-leptos](https://github.com/akesson/cargo-leptos) tool using [Axum](https://github.com/tokio-rs/axum).
 
