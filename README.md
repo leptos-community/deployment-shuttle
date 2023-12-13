@@ -6,7 +6,7 @@
 # Leptos Axum Starter Template - Hosted on Shuttle.rs
 
 ## Note: This Leptos starter template has been modified to deploy to Shuttle.rs 
-https://github.com/shuttle-hq/shuttle/issues/1002#issuecomment-1853661643
+See here for details: https://github.com/shuttle-hq/shuttle/issues/1002#issuecomment-1853661643
 
 ---
 
