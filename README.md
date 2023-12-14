@@ -29,7 +29,7 @@ cargo generate --git https://github.com/Rust-WASI-WASM/shuttle-leptos-axum.git
 to generate a new project template.
 
 ```sh
-cd shuttle-leptos
+cd {{project-name}}
 ```
 
 to go to your newly created project.
