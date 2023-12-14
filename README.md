@@ -23,7 +23,7 @@ cargo install cargo-leptos
 
 Then run
 ```sh
-git clone https://github.com/Rust-WASI-WASM/shuttle-leptos-axum.git
+cargo generate --git https://github.com/Rust-WASI-WASM/shuttle-leptos-axum.git
 ```
 
 to generate a new project template.
