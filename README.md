@@ -3,9 +3,9 @@
     <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
 </picture>
 
-# Leptos Axum Starter Template - Hosted on Shuttle.rs
+# Leptos Axum Starter Template <i>Hosted on Shuttle.rs</i>
 
-## Note: This Leptos starter template has been modified to deploy to Shuttle.rs 
+## Note: This Leptos starter template has been modified to deploy to Shuttle.rs
 See here for details: https://github.com/shuttle-hq/shuttle/issues/1002#issuecomment-1853661643
 
 ---
@@ -16,23 +16,23 @@ This is a template for use with the [Leptos](https://github.com/leptos-rs/leptos
 
 If you don't have `cargo-leptos` installed you can install it with
 
-```bash
+```sh
 cargo install cargo-leptos
 ```
 
 Then run
-```bash
-cargo leptos new --git leptos-rs/start-axum
+```sh
+git clone https://github.com/Rust-WASI-WASM/shuttle-leptos-axum.git
 ```
 
 to generate a new project template.
 
-```bash
+```sh
 cd shuttle-leptos
 ```
 
-to go to your newly created project.  
-Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.  
+to go to your newly created project.
+Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.
 Addtionally, Cargo.toml may need updating as new versions of the dependencies are released, especially if things are not working after a `cargo update`.
 
 ## Running your project
@@ -66,7 +66,7 @@ cargo leptos end-to-end
 cargo leptos end-to-end --release
 ```
 
-Cargo-leptos uses Playwright as the end-to-end test tool.  
+Cargo-leptos uses Playwright as the end-to-end test tool.
 Tests are located in end2end/tests directory.
 
 ## Executing a Server on a Remote Machine Without the Toolchain
