@@ -37,7 +37,7 @@ Addtionally, Cargo.toml may need updating as new versions of the dependencies ar
 
 ## Running your project
 
-```bash
+```sh
 cargo leptos watch
 ```
 
@@ -51,18 +51,18 @@ By default, `cargo-leptos` uses `nightly` Rust, `cargo-generate`, and `sass`. If
 4. `npm install -g sass` - install `dart-sass` (should be optional in future
 
 ## Compiling for Release
-```bash
+```sh
 cargo leptos build --release
 ```
 
 Will generate your server binary in target/server/release and your site package in target/site
 
 ## Testing Your Project
-```bash
+```sh
 cargo leptos end-to-end
 ```
 
-```bash
+```sh
 cargo leptos end-to-end --release
 ```
 
@@ -76,11 +76,14 @@ After running a `cargo leptos build --release` the minimum files needed are:
 2. The `site` directory and all files within located in `target/site`
 
 Copy these files to your remote server. The directory structure should be:
+
 ```text
 shuttle-leptos
 site/
 ```
+
 Set the following environment variables (updating for your project as needed):
+
 ```text
 LEPTOS_OUTPUT_NAME="shuttle-leptos"
 LEPTOS_SITE_ROOT="site"
@@ -88,4 +91,5 @@ LEPTOS_SITE_PKG_DIR="pkg"
 LEPTOS_SITE_ADDR="127.0.0.1:3000"
 LEPTOS_RELOAD_PORT="3001"
 ```
+
 Finally, run the server binary.
