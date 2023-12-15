@@ -5,7 +5,7 @@
 
 # Leptos Axum Starter Template <i>Hosted on Shuttle.rs</i>
 
-Note: This Leptos starter template has been modified to deploy to Shuttle.rs
+Note: This Leptos starter template has been modified to deploy to [Shuttle.rs](https://www.shuttle.rs/)
 
 For further details and for updates, see here: https://github.com/shuttle-hq/shuttle/issues/1002#issuecomment-1853661643
 
@@ -58,7 +58,7 @@ By default, `cargo-leptos` uses `nightly` Rust, `cargo-generate`, and `sass`. If
 
 ## Setting Up Shuttle.rs
 
-First, make sure you have the Shuttle CLI: run
+First, make sure you have the [Shuttle.rs](https://www.shuttle.rs/) CLI: run
 
 ```sh
 cargo install cargo-shuttle
@@ -116,7 +116,13 @@ cargo shuttle run
 cargo leptos build --release
 ```
 
-Will generate your server binary in target/server/release and your site package in target/site
+Will generate your server binary in target/server/release and your site package in target/site.
+
+```sh
+cargo shuttle deploy
+```
+
+Will deploy your updated application to Shuttle.rs.
 
 ## Testing Your Project
 ```sh
