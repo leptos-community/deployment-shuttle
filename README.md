@@ -72,12 +72,23 @@ In your project folder, then run
 ```sh
 cargo shuttle project start
 ```
-to initiate your new project with Shuttle's cloud service. At this point, you're able to deploy to Shuttle manually using the command
+to initiate your new project with Shuttle's cloud service.At this point, you can either run your project locally using the command
+
+```sh
+cargo shuttle run
+```
+
+ you're able to deploy to Shuttle manually using the command
 
 ```sh
 cargo shuttle deploy
 ```
 
+Note: If you update the dependencies of your project, you'll need to re-initiate your Shuttle project using
+
+```sh
+cargo shuttle project restart
+```
 
 
 ## Compiling for Release
