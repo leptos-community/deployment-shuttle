@@ -1,5 +1,3 @@
-name = "leptos-starter"
+name = "{{project-name}}"
 
-assets = [
-    "target/site/*"
-]
+assets = ["target/site/*"]
