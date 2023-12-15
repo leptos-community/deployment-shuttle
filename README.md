@@ -51,6 +51,35 @@ By default, `cargo-leptos` uses `nightly` Rust, `cargo-generate`, and `sass`. If
 3. `cargo install cargo-generate` - install `cargo-generate` binary (should be installed automatically in future)
 4. `npm install -g sass` - install `dart-sass` (should be optional in future
 
+## Setting Up Deployments to Shuttle
+
+First, make sure you have the Shuttle CLI: run
+
+```sh
+cargo install cargo-shuttle
+```
+
+to install the Shuttle CLI. Then, to log in to Shuttle, run
+
+```sh
+cargo shuttle login
+```
+
+When the Shuttle webpage opens, copy your API key and enter it into the Shuttle CLI.
+
+In your project folder, then run
+
+```sh
+cargo shuttle project start
+```
+to initiate your new project with Shuttle's cloud service. At this point, you're able to deploy to Shuttle manually using the command
+
+```sh
+cargo shuttle deploy
+```
+
+
+
 ## Compiling for Release
 ```sh
 cargo leptos build --release
@@ -69,6 +98,8 @@ cargo leptos end-to-end --release
 
 Cargo-leptos uses Playwright as the end-to-end test tool.
 Tests are located in end2end/tests directory.
+
+
 
 ## Executing a Server on a Remote Machine Without the Toolchain
 After running a `cargo leptos build --release` the minimum files needed are:
