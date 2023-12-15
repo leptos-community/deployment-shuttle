@@ -13,7 +13,7 @@ For further details and for updates, see here: https://github.com/shuttle-hq/shu
 
 This is a template for use with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [cargo-leptos](https://github.com/akesson/cargo-leptos) tool using [Axum](https://github.com/tokio-rs/axum).
 
-## Creating your template repo
+## Creating Your Template Repo
 
 If you don't have `cargo-leptos` installed you can install it with
 
@@ -21,26 +21,29 @@ If you don't have `cargo-leptos` installed you can install it with
 cargo install cargo-leptos
 ```
 
+If you don't have `cargo-generate` installed already, install it with
+
+```sh
+cargo install cargo-generate
+```
+
 Then run
 ```sh
 cargo generate --git https://github.com/Rust-WASI-WASM/shuttle-leptos-axum.git
 ```
 
-to generate a new project template.
+to generate a new project template. Then
 
 ```sh
 cd {{project-name}}
 ```
 
 to go to your newly created project.
+
 Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.
+
 Addtionally, Cargo.toml may need updating as new versions of the dependencies are released, especially if things are not working after a `cargo update`.
 
-## Running your project
-
-```sh
-cargo leptos watch
-```
 
 ## Installing Additional Tools
 
@@ -49,9 +52,11 @@ By default, `cargo-leptos` uses `nightly` Rust, `cargo-generate`, and `sass`. If
 1. `rustup toolchain install nightly --allow-downgrade` - make sure you have Rust nightly
 2. `rustup target add wasm32-unknown-unknown` - add the ability to compile Rust to WebAssembly
 3. `cargo install cargo-generate` - install `cargo-generate` binary (should be installed automatically in future)
-4. `npm install -g sass` - install `dart-sass` (should be optional in future
+4. `npm install -g sass` - install `dart-sass` (should be optional in future)
 
-## Setting Up Deployments to Shuttle
+
+
+## Setting Up Shuttle.rs
 
 First, make sure you have the Shuttle CLI: run
 
@@ -65,9 +70,10 @@ to install the Shuttle CLI. Then, to log in to Shuttle, run
 cargo shuttle login
 ```
 
-When the Shuttle webpage opens, copy your API key and enter it into the Shuttle CLI.
+When the Shuttle webpage opens, copy the API key and enter it into the Shuttle CLI.
 
-In your project folder, then run
+
+In your project folder, run
 
 ```sh
 cargo shuttle project start
@@ -89,6 +95,12 @@ Note: If you update the dependencies of your project, you'll need to re-initiate
 
 ```sh
 cargo shuttle project restart
+```
+
+## Running your Shuttle project locally
+
+```sh
+cargo shuttle run
 ```
 
 
