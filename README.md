@@ -79,7 +79,7 @@ In your project folder, run
 cargo shuttle project start
 ```
 
-to initiate your new project with Shuttle's cloud service. At this point, you can either run your project locally using the command
+to initiate your new project with Shuttle. At this point, you can either run your project locally using the command
 
 ```sh
 cargo shuttle run
@@ -116,13 +116,14 @@ cargo shuttle run
 cargo leptos build --release
 ```
 
-Will generate your server binary in target/server/release and your site package in target/site.
+Will generate your server binary in target/server/release and your site package in target/site, and
 
 ```sh
 cargo shuttle deploy
 ```
 
-Will deploy your updated application to Shuttle.rs.
+will deploy your updated application to [Shuttle.rs](https://www.shuttle.rs/).
+
 
 ## Testing Your Project
 ```sh
