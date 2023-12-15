@@ -97,6 +97,13 @@ Note: If you update the dependencies of your project, you'll need to re-initiate
 cargo shuttle project restart
 ```
 
+If you find that your deployed project does not look like it's updating, you may need to run the following commands in your project folder:
+
+```sh
+cargo clean
+cargo leptos build --release && cargo shuttle deploy
+```
+
 ## Running your Shuttle project locally
 
 ```sh
@@ -124,6 +131,7 @@ Cargo-leptos uses Playwright as the end-to-end test tool.
 Tests are located in end2end/tests directory.
 
 
+<!-- ----------- Not relevant for deploying to Shuttle ----------------
 
 ## Executing a Server on a Remote Machine Without the Toolchain
 After running a `cargo leptos build --release` the minimum files needed are:
@@ -149,3 +157,5 @@ LEPTOS_RELOAD_PORT="3001"
 ```
 
 Finally, run the server binary.
+
+-->
