@@ -82,8 +82,10 @@ cargo shuttle project start
 to initiate your new project with Shuttle. At this point, you can either run your project locally using the command
 
 ```sh
-cargo shuttle run
+cargo shuttle run --release
 ```
+NB: `cargo shuttle run` by itself does not work - release mode must be used.
+
 
 Or you can deploy to Shuttle.rs manually using the command
 
