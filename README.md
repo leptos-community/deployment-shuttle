@@ -5,7 +5,7 @@
 
 # Leptos Axum Starter Template <i>Hosted on Shuttle.rs</i>
 
-STATUS: Local development of a Leptos-Shuttle project is working; however, Shuttle.rs IS NOT working for cloud deploys of Leptos apps. Contributions & fixes are welcome.
+**STATUS: Local development of a Leptos-Shuttle project is working; however, Shuttle.rs IS NOT working for cloud deploys of Leptos apps. Contributions & fixes are welcome.**
 
 Note: This Leptos starter template has been modified to deploy to [Shuttle.rs](https://www.shuttle.rs/)
 
