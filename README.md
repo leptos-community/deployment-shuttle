@@ -5,6 +5,8 @@
 
 # Leptos Axum Starter Template <i>Hosted on Shuttle.rs</i>
 
+STATUS: Local development of a Leptos-Shuttle project is working; however, Shuttle.rs IS NOT working for cloud deploys of Leptos apps. Contributions & fixes are welcome.
+
 Note: This Leptos starter template has been modified to deploy to [Shuttle.rs](https://www.shuttle.rs/)
 
 For further details and for updates, see here: https://github.com/shuttle-hq/shuttle/issues/1002#issuecomment-1853661643
@@ -31,7 +33,7 @@ Then run
 ```sh
 cargo generate --git https://github.com/Rust-WASI-WASM/shuttle-leptos-axum.git
 ```
-
+Currently, to run Leptos Shuttle locally, you must run in `--release` mode
 to generate a new project template. Then
 
 ```sh
@@ -109,11 +111,16 @@ cargo leptos build --release && cargo shuttle deploy
 ## Running your Shuttle project locally
 
 ```sh
-cargo shuttle run
+cargo shuttle run --release
 ```
+
+While Shuttle's normal dev workflow can be run with `cargo shuttle run`, currently, to run Leptos Shuttle locally, you must run in `--release` mode to bypass issues with hydration.
 
 
 ## Compiling for Release
+
+> Note: Shuttle.rs does not officially support Leptos in SSR mode. As of now, the following instructions DO NOT lead to a working Leptos SSR deploy to Shuttle.rs. You are welcome to make any contributions that will help remedy this issue.
+
 ```sh
 cargo leptos build --release
 ```
