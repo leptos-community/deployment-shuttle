@@ -119,7 +119,7 @@ While Shuttle's normal dev workflow can be run with `cargo shuttle run`, current
 
 ## Compiling for Release
 
-> Note: Shuttle.rs does not officially support Leptos in SSR mode. As of now, the following instructions DO NOT lead to a working Leptos SSR deploy to Shuttle.rs. You are welcome to make any contributions that will help remedy this issue.
+> **Note: Shuttle.rs does not officially support Leptos in SSR mode. As of now, the following instructions DO NOT lead to a working Leptos SSR deploy to Shuttle.rs. You are welcome to make any contributions that will help remedy this issue.**
 
 ```sh
 cargo leptos build --release
